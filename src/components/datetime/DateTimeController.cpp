@@ -172,7 +172,7 @@ std::string DateTime::FormattedTime() {
   auto hour = Hours();
   auto minute = Minutes();
   // Return time as a string in 12- or 24-hour format
-  char buff[9];
+  char buff[12];
   if (settingsController.GetClockType() == ClockType::H12) {
     uint8_t hour12;
     const char* amPmStr;

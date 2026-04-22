@@ -178,7 +178,7 @@ void StopWatch::RenderLaps() {
 
     if (lap) {
       TimeSeparated laptime = ConvertTicksToTimeSegments(lap->timeSinceStart);
-      char buffer[19];
+      char buffer[27];
       if (laptime.hours > 0) {
         snprintf(buffer,
                  sizeof(buffer),

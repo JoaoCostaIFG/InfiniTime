@@ -412,7 +412,7 @@ uint32_t Hiit::GetElapsedWorkoutTime() const {
 void Hiit::FormatTime(char* buffer, uint32_t seconds) const {
   uint32_t minutes = seconds / 60;
   uint32_t secs = seconds % 60;
-  sprintf(buffer, "%02lu:%02lu", minutes, secs);
+  sprintf(buffer, "%02u:%02u", minutes, secs);
 }
 
 void Hiit::OnStartClicked(lv_obj_t* obj, lv_event_t event) {
